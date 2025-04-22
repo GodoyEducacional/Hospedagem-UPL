@@ -14,7 +14,7 @@ exports.create = async (req, res) => {
     const picture = new Picture({
       name,
       image: file.buffer,
-      contentType: file.mimetype
+      contentType: file.mimetype,
     });
 
     // Salva a imagem no DB
@@ -46,12 +46,12 @@ exports.findAll = async (req, res) => {
 exports.getImage = async (req, res) => {
   try {
     const picture = await Picture.findById(req.params.id);
-    
+
     if (!picture) {
       return res.status(404).json({ message: "Imagem não encontrada!" });
     }
 
-    res.set('Content-Type', picture.contentType);
+    res.set("Content-Type", picture.contentType);
     res.send(picture.image);
   } catch (error) {
     res.status(500).json({ message: "Erro ao buscar imagem!" });

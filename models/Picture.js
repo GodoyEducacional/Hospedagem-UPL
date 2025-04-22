@@ -11,7 +11,7 @@ const PictureSchema = new Schema({
   // Campo para armazenar a imagem como Buffer
   image: { type: Buffer, required: true },
   // Campo para armazenar o tipo de conteúdo da imagem
-  contentType: { type: String, required: true }
+  contentType: { type: String, required: true },
 });
 
 // Criando o modelo 'Picture' a partir do esquema criado antes

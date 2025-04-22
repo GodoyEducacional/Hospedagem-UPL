@@ -13,10 +13,10 @@ const dbPassword = process.env.DB_PASS;
 
 // Função para no DB
 async function main() {
-  await mongoose
-    .connect
+  await mongoose.connect(
     // Link do Mongo
-    (`mongodb+srv://${dbUser}:${dbPassword}@clusterapi.h93mb.mongodb.net/?retryWrites=true&w=majority&appName=ClusterAPI`);
+    `mongodb+srv://${dbUser}:${dbPassword}@clusterapi.h93mb.mongodb.net/?retryWrites=true&w=majority&appName=ClusterAPI`
+  );
   // Exibe ao usuario que realizou a conexão
   console.log("Conectou ao banco de dados!");
 }

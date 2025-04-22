@@ -18,14 +18,14 @@ const pictureRouter = require("./routes/picture");
 
 // Configuração do CORS
 app.use((req, res, next) => {
-    res.header('Access-Control-Allow-Origin', '*');
-    res.header('Access-Control-Allow-Methods', 'GET, POST, DELETE');
-    res.header('Access-Control-Allow-Headers', 'Content-Type');
-    next();
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Methods", "GET, POST, DELETE");
+  res.header("Access-Control-Allow-Headers", "Content-Type");
+  next();
 });
 
 // Servir arquivos estáticos da pasta uploads
-app.use('/uploads', express.static('uploads'));
+app.use("/uploads", express.static("uploads"));
 
 // Define que todas as rotas são "localhost:3000/pictures"
 app.use("/pictures", pictureRouter);
