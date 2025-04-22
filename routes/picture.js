@@ -24,3 +24,7 @@ router.delete("/:id", PictureController.remove);
 
 // Exportando o arquivo para utilizar no app.js
 module.exports = router;
+
+// localhost:4000/pictures
+// localhost:4000/pictures/67fee070fe681bc3b611aaa5/image
+// https://hospedagem-upl.onrender.com/pictures/67fee070fe681bc3b611aaa5/image
