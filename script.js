@@ -16,7 +16,7 @@ const elements = {
 // CONFIGURAÇÕES DA APLICAÇÃO
 // =============================================
 const config = {
-  apiUrl: "http://localhost:4000/pictures", // Endpoint da API
+  apiUrl: "https://hospedagem-upl.onrender.com/pictures", // Endpoint da API
   // Imagem padrão para erros
   placeholderImage:
     "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgZmlsbD0iI2VlZWVlZSIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMjQiIGZpbGw9IiM5OTk5OTkiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGR5PSIuM2VtIj5FcnJvIGFvIGNhcnJlZ2FyIGltYWdlbTwvdGV4dD48L3N2Zz4=",
